@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libs/ashot-1.5.3.jar"/>
+	<classpathentry kind="lib" path="libs/byte-buddy-1.8.3.jar"/>
+	<classpathentry kind="lib" path="libs/client-combined-3.13.0.jar"/>
+	<classpathentry kind="lib" path="libs/client-combined-3.13.0-sources.jar"/>
+	<classpathentry kind="lib" path="libs/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="libs/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="libs/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="libs/commons-io-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="libs/commons-io-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="libs/commons-io-2.6-tests.jar"/>
+	<classpathentry kind="lib" path="libs/commons-io-2.6-test-sources.jar"/>
+	<classpathentry kind="lib" path="libs/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="libs/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="libs/fontbox-1.5.0.jar"/>
+	<classpathentry kind="lib" path="libs/gson-2.8.4.jar"/>
+	<classpathentry kind="lib" path="libs/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="libs/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="libs/httpclient-4.5.5.jar"/>
+	<classpathentry kind="lib" path="libs/httpcore-4.4.9.jar"/>
+	<classpathentry kind="lib" path="libs/itext-2.1.7.jar"/>
+	<classpathentry kind="lib" path="libs/itextpdf-5.5.5.jar"/>
+	<classpathentry kind="lib" path="libs/itextpdf-5.5.5-javadoc.jar"/>
+	<classpathentry kind="lib" path="libs/itextpdf-5.5.5-sources.jar"/>
+	<classpathentry kind="lib" path="libs/itext-pdfa-5.5.5.jar"/>
+	<classpathentry kind="lib" path="libs/itext-pdfa-5.5.5-javadoc.jar"/>
+	<classpathentry kind="lib" path="libs/itext-pdfa-5.5.5-sources.jar"/>
+	<classpathentry kind="lib" path="libs/itext-xtra-5.5.5.jar"/>
+	<classpathentry kind="lib" path="libs/itext-xtra-5.5.5-javadoc.jar"/>
+	<classpathentry kind="lib" path="libs/itext-xtra-5.5.5-sources.jar"/>
+	<classpathentry kind="lib" path="libs/java-client-6.1.0.jar"/>
+	<classpathentry kind="lib" path="libs/jcommon-1.0.23.jar"/>
+	<classpathentry kind="lib" path="libs/jfreechart-1.0.19.jar"/>
+	<classpathentry kind="lib" path="libs/jfreechart-1.0.19-demo.jar"/>
+	<classpathentry kind="lib" path="libs/jfreechart-1.0.19-experimental.jar"/>
+	<classpathentry kind="lib" path="libs/jfreechart-1.0.19-swt.jar"/>
+	<classpathentry kind="lib" path="libs/jfreesvg-2.0.jar"/>
+	<classpathentry kind="lib" path="libs/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="libs/junit-4.13-beta-3.jar"/>
+	<classpathentry kind="lib" path="libs/ojdbc5.jar"/>
+	<classpathentry kind="lib" path="libs/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="libs/okhttp-3.10.0.jar"/>
+	<classpathentry kind="lib" path="libs/okio-1.14.1.jar"/>
+	<classpathentry kind="lib" path="libs/ons.jar"/>
+	<classpathentry kind="lib" path="libs/orai18n.jar"/>
+	<classpathentry kind="lib" path="libs/orsoncharts-1.4-eval-nofx.jar"/>
+	<classpathentry kind="lib" path="libs/orsonpdf-1.6-eval.jar"/>
+	<classpathentry kind="lib" path="libs/pdfbox-1.8.15.jar"/>
+	<classpathentry kind="lib" path="libs/servlet.jar"/>
+	<classpathentry kind="lib" path="libs/simplefan.jar"/>
+	<classpathentry kind="lib" path="libs/suite.jar"/>
+	<classpathentry kind="lib" path="libs/swtgraphics2d.jar"/>
+	<classpathentry kind="lib" path="libs/ucp.jar"/>
+	<classpathentry kind="lib" path="libs/xdb6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
