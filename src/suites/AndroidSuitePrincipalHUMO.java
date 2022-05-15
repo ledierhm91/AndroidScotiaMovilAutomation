@@ -22,7 +22,7 @@ public class AndroidSuitePrincipalHUMO{
 		{
 			AndroidSuiteModular suite = new AndroidSuiteModular();
 			
-			Config.iniciar("4723","ad0a16036888f1122f"); // S7	
+		    Config.iniciar("4723","R28M415FXEX"); // S7	
 		//	Config.iniciar("4723","42007aa7d3b1a57b"); // J4
 			
 		//	Frmwrk.conectarBD();			

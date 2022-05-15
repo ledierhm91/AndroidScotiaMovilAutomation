@@ -42,7 +42,7 @@ public class Config {
 	        capabilities.setCapability("unicodeKeyboard", true); //Codigo para utilizar el teclado de APPIUM
 	    //   capabilities.setCapability("resetKeyboard", true);	//Codigo para volver a setear el teclado por defecto de Android (para que siga funcionando normalmente)        
 	        
-	  //      capabilities.setCapability("udid", udid); //J4 42007aa7d3b1a57b //S7 ad0a16036888f1122f
+	      //capabilities.setCapability("udid", udid); //J4 42007aa7d3b1a57b //S7 ad0a16036888f1122f
 	        
 	        capabilities.setCapability("autoGrantPermissions", true);
 	 //       
@@ -59,26 +59,27 @@ public class Config {
 	       ///// config para instalar la app en el dispositivo y utilizar esta para el proceso de testing
 	      //File file = new File("//Users//scotibank//Downloads//", "develop_2.5.0beta5_127.apk");
 	        
-	      File file = new File("//Volumes//HD - Datos - Datos//APK//", "develop_2.4.3_137.apk" );
+	       File file = new File("//Volumes//HD - Datos - Datos//APK//", "develop_2.4.3_137.apk" );
 	      
-	      capabilities.setCapability("app", file.getAbsolutePath());  
+	       capabilities.setCapability("app", file.getAbsolutePath());  
 	        
 	        ///// config para abrir la app instalada en el dispositivo para el proceso de testing
-	      capabilities.setCapability("appPackage", "com.ingsw.scotiabankapp.develop");
+	       capabilities.setCapability("appPackage", "com.ingsw.scotiabankapp.develop");
 //	       capabilities.setCapability("appPackage", "com.ingsw.scotiabankapp.testing");
 	       capabilities.setCapability("appActivity","com.ingsw.scotiabankapp.introduction.SplashActivity");	
 	      
-	 	  //mCurrentFocus=Window{3f266bcd0 u0 com.ibm.security.verifyapp/com.ibm.security.verifyapp.activities.WelcomeActivity}
-	      //  com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity	        
+	 	 //mCurrentFocus=Window{3f266bcd0 u0 com.ibm.security.verifyapp/com.ibm.security.verifyapp.activities.WelcomeActivity}
+	     //com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity	        
 	        //---------------------------------------------------------------------------------------------
 	       ///emulador
 	 
 	
 //	        capabilities.setCapability("avd", "Pixel_3a_XL_API_28_1");  // Android 9
-	//       capabilities.setCapability("avd", "Pixel_4_API_27");	 // Android 8.1
+	//      capabilities.setCapability("avd", "Pixel_4_API_27");	 // Android 8.1
 //	        capabilities.setCapability("avd", "Pixel_3a_XL_API_28_1");  // Android 9	         
-	       //capabilities.setCapability("avd", "Pixel_4_XL_API_29_1");  // Android 10
-	    //capabilities.setCapability("avd", "Pixel_4_API_29_PS");  // Android 10 con Playstore
+	      //capabilities.setCapability("avd", "Pixel_4_XL_API_29_1");  // Android 10
+	      //capabilities.setCapability("avd", "Pixel5_Android11");  // Android 11
+	      //capabilities.setCapability("avd", "Pixel_4_API_29_PS");  // Android 10 con Playstore
 	        
 	       
 	        //---------------------------------------------------------------------------------------------
