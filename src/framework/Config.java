@@ -78,7 +78,7 @@ public class Config {
 	//      capabilities.setCapability("avd", "Pixel_4_API_27");	 // Android 8.1
 //	        capabilities.setCapability("avd", "Pixel_3a_XL_API_28_1");  // Android 9	         
 	      //capabilities.setCapability("avd", "Pixel_4_XL_API_29_1");  // Android 10
-	      //capabilities.setCapability("avd", "Pixel5_Android11");  // Android 11
+	      capabilities.setCapability("avd", "Pixel5_Android11");  // Android 11
 	      //capabilities.setCapability("avd", "Pixel_4_API_29_PS");  // Android 10 con Playstore
 	        
 	       
