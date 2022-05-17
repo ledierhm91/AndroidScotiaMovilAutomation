@@ -59,7 +59,7 @@ public class Config {
 	       ///// config para instalar la app en el dispositivo y utilizar esta para el proceso de testing
 	      //File file = new File("//Users//scotibank//Downloads//", "develop_2.5.0beta5_127.apk");
 	        
-	       File file = new File("//Volumes//HD - Datos - Datos//APK//", "develop_2.4.3_137.apk" );
+	       File file = new File("D:\\Selenium\\APP\\develop_2.4.3_137.apk" );
 	      
 	       capabilities.setCapability("app", file.getAbsolutePath());  
 	        
@@ -75,10 +75,10 @@ public class Config {
 	 
 	
 //	        capabilities.setCapability("avd", "Pixel_3a_XL_API_28_1");  // Android 9
-	//      capabilities.setCapability("avd", "Pixel_4_API_27");	 // Android 8.1
+	      //capabilities.setCapability("avd", "Pixel_4_API_27");	 // Android 8.1
 //	        capabilities.setCapability("avd", "Pixel_3a_XL_API_28_1");  // Android 9	         
 	      //capabilities.setCapability("avd", "Pixel_4_XL_API_29_1");  // Android 10
-	      capabilities.setCapability("avd", "Pixel5_Android11");  // Android 11
+	      //capabilities.setCapability("avd", "Pixel5_Android11");  // Android 11
 	      //capabilities.setCapability("avd", "Pixel_4_API_29_PS");  // Android 10 con Playstore
 	        
 	       
