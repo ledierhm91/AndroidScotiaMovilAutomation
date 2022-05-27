@@ -156,11 +156,11 @@ public class UI_Login {
     MobileElement ingresar = (MobileElement) Config.driver.findElement(By.id("btn_login"));
     ingresar.click(); 
     
-   if (Config.conClaveDigital==true)
+    /*if (Config.conClaveDigital==true)
 		{
     Thread.sleep(2000); //esto es sólo para clave digita
     ingresar.click(); 
-		}
+		}  */
     
     //Si es el S7, clickeamos en el boton cancelar del mensaje que nos informa sobre la huella
     
