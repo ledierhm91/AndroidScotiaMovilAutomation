@@ -59,7 +59,7 @@ public class Config {
 	       ///// config para instalar la app en el dispositivo y utilizar esta para el proceso de testing
 	      //File file = new File("//Users//scotibank//Downloads//", "develop_2.5.0beta5_127.apk");
 	        
-	       File file = new File("//Volumes//HD - Datos - Datos//APK//", "develop_2.4.3_137.apk" );
+	       File file = new File("/Users/ledier.hernandez/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite/OneDrive - Perficient, Inc.noindex/OneDrive - Perficient, Inc/Repositorios/AndroidScotiaMovilAutomation/app", "vtesting.apk" );
 	      
 	       capabilities.setCapability("app", file.getAbsolutePath());  
 	        
