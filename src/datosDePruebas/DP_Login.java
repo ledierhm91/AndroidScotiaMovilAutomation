@@ -89,7 +89,7 @@ public class DP_Login{
 	  						break;
 	  						
 	            case 13:  	
-	            	usuario = "33344396";
+	            	usuario = "33344396"; //usuario para hacer las pruebas en desarrollo
 	        		pin = "1234";
 	        		password = "Password123..";
 	  						break;
