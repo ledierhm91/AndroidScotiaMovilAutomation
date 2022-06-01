@@ -1,16 +1,25 @@
 package ui;
 
 import java.sql.ResultSet;
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import framework.Config;
 import framework.Frmwrk;
 import casosDePrueba.Tarjetas;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.touch.WaitOptions;
+import java.util.concurrent.TimeUnit;
 
 public class UI_Tarjetas {
 		 
 	UI_Comun c = PageFactory.initElements(Config.driver, UI_Comun.class);
+
+//	Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+//  WebDriverWait wait = new WebDriverWait(Config.driver, Duration.ofSeconds(120));
 	
 	public void irTarjAmex() throws Exception
 	{Config.esperar("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[1]");
@@ -175,7 +184,9 @@ public class UI_Tarjetas {
 		 
 		 Frmwrk.logEvidencia(Config.globalCP, "Confirmar pago?");
 		 
-		 btn_pagar.click();  
+		 
+		 MobileElement confirmar = (MobileElement) Config.driver.findElement(By.id("btnPay"));
+		 confirmar.click();  
 		 
 		 Thread.sleep(15000);
 		// Frmwrk.logEvidencia(Config.globalCP, "Ticket");

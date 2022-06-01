@@ -11,6 +11,8 @@
 
 package suites;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 
@@ -142,6 +144,7 @@ public class AndroidSuiteModular{
 		 } 
 	 public void modPagoTarjetaTercero() throws Exception
 		{
+		 Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	 	 Tarjetas.completarPagoTercero();	
 	 	// Tarjetas.detalles();
 		/* Tarjetas.enviarPlantilla();	
