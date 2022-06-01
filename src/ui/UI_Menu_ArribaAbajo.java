@@ -285,7 +285,7 @@ public class UI_Menu_ArribaAbajo {
 		{
 	    MobileElement btn_ini = (MobileElement) Config.driver.findElement(By.id("navigation_home"));
 	    btn_ini.click(); 
-	    Thread.sleep(2000);
+//	    Thread.sleep(2000);
 	    
 	    }
 	
@@ -369,8 +369,8 @@ public class UI_Menu_ArribaAbajo {
 	   btn_promo_filtro.click();  
 	    }
 	 public void promoOPTodoparabebes() throws Exception
-		{Config.esperar("hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[15]");
-	   MobileElement btn_promo_filtro = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[15]"));
+		{Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[7]");
+	   MobileElement btn_promo_filtro = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[7]"));
 	   btn_promo_filtro.click();  
 	    }
 	 

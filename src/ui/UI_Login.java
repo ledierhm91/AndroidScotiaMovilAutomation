@@ -28,13 +28,13 @@ public class UI_Login {
 		Config.esperar("btn_show_tour");
 		
 		Frmwrk.logEvidencia(Config.globalCP, "Tutorial - Pantalla 1");
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		c.swipeHRL();
 		Frmwrk.logEvidencia(Config.globalCP, "Tutorial - Pantalla 2");
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		c.swipeHRL();
 		Frmwrk.logEvidencia(Config.globalCP, "Tutorial - Pantalla 3");	
-		Thread.sleep(2000);	
+//		Thread.sleep(2000);	
 		MobileElement btn_tour = (MobileElement) Config.driver.findElement(By.id("btn_show_tour"));
 		btn_tour.click();
 		
@@ -119,7 +119,7 @@ public class UI_Login {
 	{		
 		if (Frmwrk.ini==false)
 		{//Config.esperar("btn_show_tour");
-		Thread.sleep(15000);
+//		Thread.sleep(15000);
 		MobileElement btn_tour = (MobileElement) Config.driver.findElement(By.id("btn_show_tour"));
 		btn_tour.click();
 		Frmwrk.ini=true;	
@@ -156,11 +156,11 @@ public class UI_Login {
     MobileElement ingresar = (MobileElement) Config.driver.findElement(By.id("btn_login"));
     ingresar.click(); 
     
-   if (Config.conClaveDigital==true)
+    /*if (Config.conClaveDigital==true)
 		{
     Thread.sleep(2000); //esto es sólo para clave digita
     ingresar.click(); 
-		}
+		}  */
     
     //Si es el S7, clickeamos en el boton cancelar del mensaje que nos informa sobre la huella
     
@@ -178,7 +178,7 @@ public class UI_Login {
     	}}
     Frmwrk.first=true;
 //    System.out.println("a"  + Frmwrk.obtenerFecha());
-    Thread.sleep(20000);
+//    Thread.sleep(20000);
    // System.out.println (Frmwrk.first);  
 	}	
 	

@@ -26,12 +26,9 @@ public class DP_Login{
 	        		password = "Testing21!";
 				  			break;
 	            case 2:  	
-	            	//usuario = "30061266";
-	            	//pin = "1212";
-	            	//password = "Testing.03";
-	            	usuario = "33344396";
-	        		pin = "1234";
-	        		password = "Password123..";
+	            	usuario = "30061266";
+	            	pin = "1212";
+	            	password = "Testing.03";
 	  						break;
 	            case 3:  	
 	            	usuario = "32390128";///"27704514";//"28335764"; PLAZO FIJO - TARJETA, 32390128
@@ -89,6 +86,12 @@ public class DP_Login{
 	            	usuario = "57251464";
 	        		pin = "1234";
 	        		password = "Testing01";
+	  						break;
+	  						
+	            case 13:  	
+	            	usuario = "33344396"; //usuario para hacer las pruebas en desarrollo
+	        		pin = "1234";
+	        		password = "Password123..";
 	  						break;
 			 }
 
