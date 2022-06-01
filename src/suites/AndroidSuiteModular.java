@@ -50,8 +50,9 @@ public class AndroidSuiteModular{
 	Config stgs = new Config();			
 	
 	public void modInicio () throws Exception
-	{long startTime=0;	
-	
+	{
+	Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	long startTime=0;	
 	try{startTime = System.nanoTime();
 	
 /*	Config.esperar("btnNegative");
@@ -65,7 +66,7 @@ public class AndroidSuiteModular{
 	Frmwrk.logEvidenciaX3(Config.globalCP, "Splash");
 	//-------------------------------------------------------
 	Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);
-	Thread.sleep(3000);
+//	Thread.sleep(3000);
 	//------------------Tutorial-----------------------------  
 	UI_Login L = PageFactory.initElements(Config.driver, UI_Login.class);		    
     Config.globalCP = "Tutorial - " + Frmwrk.obtenerFecha();
@@ -86,6 +87,7 @@ public class AndroidSuiteModular{
 	 		 	
 		public void modLogIn (String Origen, Integer juegoDatos) throws Exception
 		{
+		 Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		 DP_Login datos = new DP_Login();
 		 datos.obtenerDatos(Origen, juegoDatos);
 		 Login.iniciar(datos.usuario, datos.pin, datos.password);	

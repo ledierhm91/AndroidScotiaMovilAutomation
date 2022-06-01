@@ -63,7 +63,7 @@ public class Tarjetas {
 	fp.home();
 	fp.tarjetas();		
 	
-	Thread.sleep(3000);
+//	Thread.sleep(3000);
 	UI_Tarjetas t = PageFactory.initElements(Config.driver, UI_Tarjetas.class);
 	t.irPagoTarjTerc();
 	t.completarPagoTercero();

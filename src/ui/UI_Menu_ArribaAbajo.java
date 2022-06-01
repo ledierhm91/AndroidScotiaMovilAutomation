@@ -285,7 +285,7 @@ public class UI_Menu_ArribaAbajo {
 		{
 	    MobileElement btn_ini = (MobileElement) Config.driver.findElement(By.id("navigation_home"));
 	    btn_ini.click(); 
-	    Thread.sleep(2000);
+//	    Thread.sleep(2000);
 	    
 	    }
 	

@@ -93,7 +93,7 @@ public class UI_Tarjetas {
 		// Config.esperar("btnPayThirdCard");
 		 
 		 Frmwrk.logEvidencia(Config.globalCP, "Bot�n pago tarjeta a terceros");
-		 Thread.sleep(7000); //aumente de 2000 a 7000
+//		 Thread.sleep(7000); //aumente de 2000 a 7000
 		 MobileElement pagoTarjTerc = (MobileElement) Config.driver.findElement(By.id("btnPayThirdCard"));
 		 pagoTarjTerc.click();		 
 		 }	 	 
@@ -188,24 +188,24 @@ public class UI_Tarjetas {
 		 MobileElement confirmar = (MobileElement) Config.driver.findElement(By.id("btnPay"));
 		 confirmar.click();  
 		 
-		 Thread.sleep(15000);
+//		 Thread.sleep(15000);
 		// Frmwrk.logEvidencia(Config.globalCP, "Ticket");
 		 
 		 c.clickOK();
 		 
-		 Thread.sleep(5000); 
+//		 Thread.sleep(5000); 
 		 
 		 if(Frmwrk.tarj3ro==false)
 		 { MobileElement volver = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.ImageButton"));
 		 volver.click();
 		 }
 		 Frmwrk.tarj3ro=false;
-		 Thread.sleep(2000); 
+//		 Thread.sleep(2000); 
 		 
 		 UI_Menu_ArribaAbajo fp2 = PageFactory.initElements(Config.driver, UI_Menu_ArribaAbajo.class);
 		 fp2.ini();
 		 
-		 Thread.sleep(2000);
+//		 Thread.sleep(2000);
 	//	 MobileElement atras = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.ImageButton"));
 	//	 atras.click();
 		 
@@ -418,18 +418,18 @@ public class UI_Tarjetas {
 		 Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[2]");
 		 MobileElement sel_tarj = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[2]"));
 		 sel_tarj.click(); */
-		 Thread.sleep(4000);
+//		 Thread.sleep(4000);
 		 c.swipeV();
-		 Thread.sleep(2000); 
+//		 Thread.sleep(2000); 
 		 Config.esperar("btnPay");
 		 
-		 Thread.sleep(2000); 
+//		 Thread.sleep(2000); 
 		 
 		 MobileElement btn_pagar = (MobileElement) Config.driver.findElement(By.id("btnPay"));
 		 btn_pagar.click(); 
 		 
 		// c.clickOK();
-		 Thread.sleep(2000); 
+//		 Thread.sleep(2000); 
 		 
 		 Config.esperar("btnPositive");
 		 Frmwrk.logEvidencia(Config.globalCP, "Mensaje");

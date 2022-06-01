@@ -13,7 +13,7 @@ public class UI_Menu_Izq {
 	 
 	 public void home () throws Exception
 		{
-		 Thread.sleep(3000);
+//		 Thread.sleep(3000);
 		 c.swipeHLR();
 		 c.swipeHRL();
 		    
@@ -21,7 +21,7 @@ public class UI_Menu_Izq {
 		 fp2.ini();
 		 
 		// System.out.println("pre home " + Frmwrk.obtenerFecha());
-		Thread.sleep(3000);
+//		Thread.sleep(3000);
 	    c.swipeHLR();
 	    c.swipeHRL();
 	    c.swipeHLR();
