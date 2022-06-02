@@ -59,11 +59,11 @@ public class UI_Menu_Izq {
 	 public void salir () throws Exception
 		{
 		
-		 Thread.sleep(3000);
+//		Thread.sleep(3000);
 	    MobileElement btn_salir = (MobileElement) Config.driver.findElement(By.id("icon"));
 	    btn_salir.click(); 
 	    
-	    Thread.sleep(2000);
+//	    Thread.sleep(2000);
 	    Frmwrk.logEvidencia(Config.globalCP, "Acepta salir del sistema?");
 	    
 	    Config.esperar("btnPositive");
@@ -73,7 +73,7 @@ public class UI_Menu_Izq {
 	 
 	 public void inicio () throws Exception
 		{//c.swipeVDown();
-		 Config.esperar("navigation_home");
+		Config.esperar("navigation_home");
 	    MobileElement btn_ = (MobileElement) Config.driver.findElement(By.id("navigation_home"));
 	    btn_.click(); 
 	    }
@@ -129,7 +129,7 @@ public class UI_Menu_Izq {
 	 
 	 public void solicChequera () throws Exception
 		{
-		 Thread.sleep(3000);
+//		 Thread.sleep(3000);
 		 c.swipeVDown();
 		 
 		 MobileElement btn_scheq;
@@ -139,7 +139,7 @@ public class UI_Menu_Izq {
 		 }
 		 else
 		 {  */
-		 Thread.sleep(2000);
+//		 Thread.sleep(2000);
 		// Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[5]/android.widget.TextView");
 		 btn_scheq = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[5]/android.widget.TextView"));
 		 //}

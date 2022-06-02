@@ -23,12 +23,12 @@ public class UI_Menu_ArribaAbajo {
 	 
 	 public void cuentas () throws Exception
 		{
-		 ini();
+		ini();
 		// Config.esperar("//android.support.v7.app.ActionBar.Tab[@content-desc=\"First Tab\"]/android.widget.LinearLayout/android.widget.ImageView");
 	    //MobileElement btn_cuentas = (MobileElement) Config.driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"First Tab\"]/android.widget.LinearLayout/android.widget.ImageView"));
 		// este xpath es nuevo. 28 de oct
 		 
-		 MobileElement btn_cuentas = (MobileElement) Config.driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"First Tab\"]/android.widget.LinearLayout/android.widget.TextView"));
+		MobileElement btn_cuentas = (MobileElement) Config.driver.findElement(By.xpath("//android.widget.LinearLayout[@content-desc=\"First Tab\"]/android.widget.LinearLayout/android.widget.TextView"));
 	    btn_cuentas.click(); 
 	    }
 	 
@@ -295,11 +295,11 @@ public class UI_Menu_ArribaAbajo {
 		Config.esperar("//android.widget.FrameLayout[@content-desc=\\\"Contactos\\\"]");
 	    MobileElement btn_contacts = (MobileElement) Config.driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Contactos\"]"));
 	    btn_contacts.click(); 
-	    Thread.sleep(12000);
+//	    Thread.sleep(12000);
 	    
 	    Frmwrk.logEvidencia(Config.globalCP, "Vemos pantalla de Contact center");	
 	    
-	    Thread.sleep(5000);
+//	    Thread.sleep(5000);
 	    MobileElement btn_contacts2 = (MobileElement) Config.driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Contactos\"]/android.widget.ImageView"));
 	    btn_contacts2.click();
 	    
