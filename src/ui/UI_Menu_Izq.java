@@ -141,8 +141,11 @@ public class UI_Menu_Izq {
 		 {  */
 //		 Thread.sleep(2000);
 		// Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[5]/android.widget.TextView");
-		 btn_scheq = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[5]/android.widget.TextView"));
+		// btn_scheq = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[5]/android.widget.TextView"));
 		 //}
+//		btn_scheq = (MobileElement) Config.driver.findElement(By.xpath("//android.widget.TextView[contains(@text,\"Chequeras\")]"));
+		btn_scheq = (MobileElement) Config.driver.findElement(By.xpath("//android.widget.TextView[@text = \"Chequeras\"][@resource-id = \"com.ingsw.scotiabankapp.testing:id/tvItemName\"]"));
+		 //*[contains(@label,"text you want to find")]
 	    
 	    btn_scheq.click(); 
 	    } 
