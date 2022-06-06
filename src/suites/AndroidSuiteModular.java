@@ -51,7 +51,7 @@ public class AndroidSuiteModular{
 	
 	public void modInicio () throws Exception
 	{
-	Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+//	Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	long startTime=0;	
 	try{startTime = System.nanoTime();
 	
@@ -87,7 +87,7 @@ public class AndroidSuiteModular{
 	 		 	
 		public void modLogIn (String Origen, Integer juegoDatos) throws Exception
 		{
-		 Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+//		 Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		 DP_Login datos = new DP_Login();
 		 datos.obtenerDatos(Origen, juegoDatos);
 		 Login.iniciar(datos.usuario, datos.pin, datos.password);	
@@ -146,7 +146,7 @@ public class AndroidSuiteModular{
 		 } 
 	 public void modPagoTarjetaTercero() throws Exception
 		{
-		 Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		 //Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	 	 Tarjetas.completarPagoTercero();	
 	 	// Tarjetas.detalles();
 		/* Tarjetas.enviarPlantilla();	

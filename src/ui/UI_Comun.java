@@ -155,7 +155,7 @@ public class UI_Comun {
 	                .release().perform();
 	        
 	      //  System.out.println("Listo");*/
-	        Thread.sleep(1000);
+//	        Thread.sleep(1000);
 		 
 	/*	 MobileElement btn_ = (MobileElement) Config.driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Open navigation drawer\"]"));
 		 btn_.click(); 
@@ -197,7 +197,7 @@ public class UI_Comun {
 	                .moveTo(point(endPoint, anchor))
 	                .release().perform();
 	        
-	        Thread.sleep(1000);
+//	        Thread.sleep(1000);
 	    //    System.out.println("Listo");
 		 }
 	 

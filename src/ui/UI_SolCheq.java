@@ -14,7 +14,7 @@ public class UI_SolCheq {
 	 public void completar() throws Exception
 		{	
 		 Config.esperar("etCheckbookQty");
-		 Thread.sleep(5000);
+//		 Thread.sleep(5000);
 	
 		 MobileElement ctdadCheq = (MobileElement) Config.driver.findElement(By.id("etCheckbookQty"));
 		 ctdadCheq.click();   
@@ -38,7 +38,7 @@ public class UI_SolCheq {
 		 
 		 Config.esperar("tvTitle");
 		 
-		 Thread.sleep(15000);
+//		 Thread.sleep(15000);
 		 	
 		 Frmwrk.logEvidencia(Config.globalCP, "Transacci�n exitosa");
 		 

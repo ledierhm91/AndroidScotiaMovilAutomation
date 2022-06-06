@@ -61,8 +61,8 @@ public class AndroidSuitePrincipalHUMO{
                 
 		 		suite.modLogIn("D", 2);         //OK
 		 		//suite.modOpcionesMenu();        //OK
-                //suite.modSolChequera();       //OK
-                suite.modPagoTarjetaTercero(); //OK	  
+                suite.modSolChequera();       //OK
+               // suite.modPagoTarjetaTercero(); //OK	  
             //  suite.modTransferInterna("UYU");  //OK
 //		        suite.modTransferInterna("USD"); //Al localizar la moneda usd no es loclizable por el robot.Ver con desarrolollo el tema 16/03
 //		  	    suite.modTransferPlaza();	//OK	  	  
