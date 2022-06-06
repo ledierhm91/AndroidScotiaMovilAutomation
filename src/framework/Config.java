@@ -62,6 +62,8 @@ public class Config {
 	      //File file = new File("//Users//scotibank//Downloads//", "develop_2.5.0beta5_127.apk");
 	        
 	       File file = new File("/Users/ledier.hernandez/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite/OneDrive - Perficient, Inc.noindex/OneDrive - Perficient, Inc/Repositorios/AndroidScotiaMovilAutomation/app", "Scotiabank.apk" );
+	       
+	       //File file = new File("/Users/clara.brizuela/Library/CloudStorage/OneDrive-Perficient,Inc/Repositorio/AndroidScotiaMovilAutomation/app/Scotiabank.apk" );
 	      
 	       capabilities.setCapability("app", file.getAbsolutePath());  
 	        
