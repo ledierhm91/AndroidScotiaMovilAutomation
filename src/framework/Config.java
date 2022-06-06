@@ -13,6 +13,8 @@ package framework;
 import java.io.File;
 import java.net.URL;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -85,6 +87,7 @@ public class Config {
 	        //---------------------------------------------------------------------------------------------
 	        
 	        driver = new AppiumDriver(new URL("http://127.0.0.1:" + portNumber + "/wd/hub"), capabilities);	
+	        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	        
 	        Frmwrk.celu=udid;  }
 	      

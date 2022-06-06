@@ -465,50 +465,50 @@ public class OpcionesMenu {
 		
 		//Thread.sleep(1000);
 		//c.swipeHLR();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		fp.inicio();
 		
 		ma.cuentas();
 		paso = "Cuentas";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);	
 		
 		paso = "Cuenta 1";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		
 		c.swipeHRLcorto();		
 		paso = "Cuenta 2";
-		Thread.sleep(10000);
+//		Thread.sleep(10000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		
 		c.swipeHRLcorto();		
 		paso = "Cuenta 3";
-		Thread.sleep(10000);
+//		Thread.sleep(10000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		
 		c.swipeHLRcorto();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		c.swipeHLRcorto();
 		
 		cu.cuentasCuadro();
 		paso = "Cuenta ultimos movimientos";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		
 		cu.cuentasFiltro();
 		paso = "Cuenta ultimos movimientos - filtro";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		
 		cu.cuentasFiltroSelec5();
 		paso = "Cuenta ultimos movimientos - selecciun 5to elemento listado";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		
 		cu.cuentasBack();
 		paso = "Vuelve a listado de cuentas";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);			
 		
 		
@@ -530,7 +530,7 @@ public class OpcionesMenu {
 		
 		ma.tarjetas();		
 		paso = "Tarjetas";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);		
 		
 		Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);	
@@ -551,7 +551,7 @@ public class OpcionesMenu {
 		
 		ma.ubicacion();		
 		paso = "Ubicacion";
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);	
 		
 		Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);	
@@ -572,7 +572,7 @@ public class OpcionesMenu {
 		
 		ma.prestamos();		
 		paso = "Prestamos";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);	
 		
 		Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);	
@@ -632,7 +632,7 @@ public class OpcionesMenu {
 		
 		ma.ini();
 		paso = "Inicio";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);	
 		
 		Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);	
@@ -653,7 +653,7 @@ public class OpcionesMenu {
 		
 		ma.contactos();		
 		paso = "Contactos";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);	
 		
 		Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);	
@@ -674,40 +674,40 @@ public class OpcionesMenu {
 		//ma.ini();
 		ma.promociones();		
 		paso = "Promociones";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		ma.promoFiltro();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		ma.promoOPJoyeria();
 		paso = "Promociones - Opcion 1";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		ma.promoFiltro();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		ma.promoOPCines();
 		paso = "Promociones - Opcion 2";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		ma.promoFiltro();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		ma.promoOPTodoparabebes();
 		paso = "Promociones - Opcion 3";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		ma.promoFiltro();
-		Thread.sleep(1000);
+//		Thread.sleep(1000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		ma.promoOPTodos();
 		paso = "Promociones - Todos";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);
 		
 		ma.promo1();
 		paso = "Promocion 1";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);	
 		
 		/*ma.promoLlamarSuc();
@@ -716,7 +716,7 @@ public class OpcionesMenu {
 		Frmwrk.logEvidencia(Config.globalCP, paso);	*/
 		
 		ma.promoBack();
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		
 		Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);	
 		}
@@ -734,10 +734,10 @@ public class OpcionesMenu {
 		Config.globalDescrip = "Ingresamos al formulario de transferencias a traves del boton de abajo"; 
 		//---------------------------------------------------------		
 		//Thread.sleep(1000);
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 		ma.transferir();		
 		paso = "Transferencias";
-		Thread.sleep(4000);
+//		Thread.sleep(4000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);	
 		
 		Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);	
@@ -758,7 +758,7 @@ public class OpcionesMenu {
 		
 		ma.scotiapagos();		
 		paso = "ScotiaPagos";
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Frmwrk.logEvidencia(Config.globalCP, paso);	
 		
 		Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);	
