@@ -13,7 +13,7 @@ public class UI_Menu_Izq {
 	 
 	 public void home () throws Exception
 		{
-		 Thread.sleep(3000);
+//		 Thread.sleep(3000);
 		 c.swipeHLR();
 		 c.swipeHRL();
 		    
@@ -21,7 +21,7 @@ public class UI_Menu_Izq {
 		 fp2.ini();
 		 
 		// System.out.println("pre home " + Frmwrk.obtenerFecha());
-		Thread.sleep(3000);
+//		Thread.sleep(3000);
 	    c.swipeHLR();
 	    c.swipeHRL();
 	    c.swipeHLR();
@@ -59,11 +59,11 @@ public class UI_Menu_Izq {
 	 public void salir () throws Exception
 		{
 		
-		 Thread.sleep(3000);
+//		Thread.sleep(3000);
 	    MobileElement btn_salir = (MobileElement) Config.driver.findElement(By.id("icon"));
 	    btn_salir.click(); 
 	    
-	    Thread.sleep(2000);
+//	    Thread.sleep(2000);
 	    Frmwrk.logEvidencia(Config.globalCP, "Acepta salir del sistema?");
 	    
 	    Config.esperar("btnPositive");
@@ -73,7 +73,7 @@ public class UI_Menu_Izq {
 	 
 	 public void inicio () throws Exception
 		{//c.swipeVDown();
-		 Config.esperar("navigation_home");
+		Config.esperar("navigation_home");
 	    MobileElement btn_ = (MobileElement) Config.driver.findElement(By.id("navigation_home"));
 	    btn_.click(); 
 	    }
@@ -85,14 +85,14 @@ public class UI_Menu_Izq {
 		
 		MobileElement btn_cuentas ;
 		
-		if (Config.conClaveDigital==true)
+		/*		if (Config.conClaveDigital==true)
 		 {btn_cuentas = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[2]"));
 		 }
 		 else
-		 {
+		 {  */
 		Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.TextView");
-	     btn_cuentas = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.TextView"));
-		 }
+	    btn_cuentas = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.TextView"));
+		// }
 	    
 	    btn_cuentas.click(); 
 	    }
@@ -106,16 +106,16 @@ public class UI_Menu_Izq {
 		 MobileElement btn_transf;
 		 System.out.println("transferir " + Frmwrk.obtenerFecha());
 		 
-		 if (Config.conClaveDigital==true)
+		 /*		 if (Config.conClaveDigital==true)
 		 {btn_transf = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[3]"));
 		 }
 		 else
-		 {
+		 {   */
 			 Thread.sleep(2000);
 	//	 Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.TextView");
 	    btn_transf = (MobileElement) Config.driver.findElement(By.xpath("hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]"));
 	    System.out.println("transferir android 6 para arriba " + Frmwrk.obtenerFecha());
-	    }
+	   // }
 	    
 	    btn_transf.click(); 
 	    }
@@ -129,20 +129,23 @@ public class UI_Menu_Izq {
 	 
 	 public void solicChequera () throws Exception
 		{
-		 Thread.sleep(3000);
+//		 Thread.sleep(3000);
 		 c.swipeVDown();
 		 
 		 MobileElement btn_scheq;
 		 
-		 if (Config.conClaveDigital==true)
+		 /*		 if (Config.conClaveDigital==true)
 		 {btn_scheq = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[6]"));
 		 }
 		 else
-		 {
-		 Thread.sleep(4000);
+		 {  */
+//		 Thread.sleep(2000);
 		// Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[5]/android.widget.TextView");
-		 btn_scheq = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.ViewAnimator/android.widget.ScrollView/android.widget.LinearLayout/android.widget.Button"));
-		 }
+		// btn_scheq = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[5]/android.widget.TextView"));
+		 //}
+//		btn_scheq = (MobileElement) Config.driver.findElement(By.xpath("//android.widget.TextView[contains(@text,\"Chequeras\")]"));
+		btn_scheq = (MobileElement) Config.driver.findElement(By.xpath("//android.widget.TextView[@text = \"Chequeras\"][@resource-id = \"com.ingsw.scotiabankapp.testing:id/tvItemName\"]"));
+		 //*[contains(@label,"text you want to find")]
 	    
 	    btn_scheq.click(); 
 	    } 
@@ -152,15 +155,15 @@ public class UI_Menu_Izq {
 		
 		MobileElement btn_tarj;
 		 
-		if (Config.conClaveDigital==true)
+		/*		if (Config.conClaveDigital==true)
 		 {btn_tarj = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[4]"));
 		 }
 		 else
-		 {
+		 {  */
 		// Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.TextView");
-	     btn_tarj = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.TextView\r\n"
+	     btn_tarj = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[3]/android.widget.TextView"
 	     		+ ""));
-		 }
+		// }
 	     btn_tarj.click();  
 	    }	
 	 
@@ -170,14 +173,14 @@ public class UI_Menu_Izq {
 		
 		 MobileElement btn_loan;
 		 
-		 if (Config.conClaveDigital==true)
+		 /*		 if (Config.conClaveDigital==true)
 		 {btn_loan= (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[5]"));
 		 }
 		 else
-		 {
+		 {  */
 		 Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]/android.widget.TextView");
 	     btn_loan = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]/android.widget.TextView"));
-		 }
+		// }
 	     
 	     btn_loan.click();  
 	  //  Config.esperar("btn_pay_loan");
@@ -215,18 +218,18 @@ public class UI_Menu_Izq {
 		 
 		 MobileElement btn_suc;
 		 
-		 if (Config.conClaveDigital==true)
+		 /*		 if (Config.conClaveDigital==true)
 		 {btn_suc = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[7]"));
 		 }
 		 else
-		 { 
+		 { */
 		Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[6]/android.widget.TextView");
 	    btn_suc = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[6]/android.widget.TextView"));
 	    if (btn_suc.getText().equals("Sucursales y Cajeros"))
 	    {}
 	    else
 		{btn_suc = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[6]/android.widget.TextView"));}
-		 }
+		// }
 	    btn_suc.click();  
 	    }
 	 
@@ -334,18 +337,18 @@ public class UI_Menu_Izq {
 		{//	c.swipeV();
 		 MobileElement btn_msgs;
 		 
-		 if (Config.conClaveDigital==true)
+		 /*		 if (Config.conClaveDigital==true)
 		 {btn_msgs = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[8]"));
 		 }
 		 else
-		 {
+		 { */
 		Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[7]/android.widget.TextView");
 	    btn_msgs = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[7]/android.widget.TextView"));
 	    if (btn_msgs.getText().equals("Mensajes"))
 	    {}
 	    else
 		{btn_msgs = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[7]/android.widget.TextView"));}
-		 } 
+		// } 
 	    btn_msgs.click();  
 	    }
 	 
@@ -478,18 +481,18 @@ public class UI_Menu_Izq {
 		
 		MobileElement btn_pend;
 		 
-		if (Config.conClaveDigital==true)
+		/*		if (Config.conClaveDigital==true)
 		 {btn_pend = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[9]"));
 		 }
 		 else
-		 {
+		 {   */
 			 Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[7]/android.widget.TextView");
 	     btn_pend = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[7]/android.widget.TextView"));
 	    if (btn_pend.getText().equals("Transacciones"))
 	    {}
 	    else
 		{btn_pend = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[8]/android.widget.TextView"));}
-		 }
+		// }
 	    btn_pend.click();  
 		}
 	 
@@ -561,18 +564,18 @@ public class UI_Menu_Izq {
 		
 		MobileElement btn_config;
 		 
-		if (Config.conClaveDigital==true)
+		/*		if (Config.conClaveDigital==true)
 		 {btn_config = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[10]"));
 		 }
 		 else
-		 {
+		 {  */
 		Config.esperar("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[8]/android.widget.TextView");
 	    btn_config= (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[8]/android.widget.TextView"));
 	    if (btn_config.getText().equals("Configuraci�n"))
 	    {}
 	    else
 		{btn_config = (MobileElement) Config.driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.support.v4.widget.DrawerLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[9]/android.widget.TextView"));}
-		 }
+		// }
 	    btn_config.click();  
 }
 	 

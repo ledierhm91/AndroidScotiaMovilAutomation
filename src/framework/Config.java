@@ -13,6 +13,8 @@ package framework;
 import java.io.File;
 import java.net.URL;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -30,7 +32,7 @@ public class Config {
 	  public static String globalBrowser;
 	  public static String globalJD="xx";
 	  public static String globalDescrip=" ";
-	  public static Boolean conClaveDigital=false;
+	//public static Boolean conClaveDigital=false;
 	  	  
 	public static void iniciar(String portNumber, String udid) throws Exception {	
 		  	DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -59,13 +61,19 @@ public class Config {
 	       ///// config para instalar la app en el dispositivo y utilizar esta para el proceso de testing
 	      //File file = new File("//Users//scotibank//Downloads//", "develop_2.5.0beta5_127.apk");
 	        
+<<<<<<< HEAD
 	       File file = new File("D:\\Selenium\\APP\\develop_2.4.3_137.apk" );
+=======
+	       File file = new File("/Users/ledier.hernandez/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite/OneDrive - Perficient, Inc.noindex/OneDrive - Perficient, Inc/Repositorios/AndroidScotiaMovilAutomation/app", "Scotiabank.apk" );
+	       
+	       //File file = new File("/Users/clara.brizuela/Library/CloudStorage/OneDrive-Perficient,Inc/Repositorio/AndroidScotiaMovilAutomation/app/Scotiabank.apk" );
+>>>>>>> e9f0eaef70e7add4a637e3b1d4c021c5f0b0f241
 	      
 	       capabilities.setCapability("app", file.getAbsolutePath());  
 	        
 	        ///// config para abrir la app instalada en el dispositivo para el proceso de testing
-	       capabilities.setCapability("appPackage", "com.ingsw.scotiabankapp.develop");
-//	       capabilities.setCapability("appPackage", "com.ingsw.scotiabankapp.testing");
+	     //capabilities.setCapability("appPackage", "com.ingsw.scotiabankapp.develop");
+	       capabilities.setCapability("appPackage", "com.ingsw.scotiabankapp.testing");
 	       capabilities.setCapability("appActivity","com.ingsw.scotiabankapp.introduction.SplashActivity");	
 	      
 	 	 //mCurrentFocus=Window{3f266bcd0 u0 com.ibm.security.verifyapp/com.ibm.security.verifyapp.activities.WelcomeActivity}
@@ -85,6 +93,7 @@ public class Config {
 	        //---------------------------------------------------------------------------------------------
 	        
 	        driver = new AppiumDriver(new URL("http://127.0.0.1:" + portNumber + "/wd/hub"), capabilities);	
+	        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	        
 	        Frmwrk.celu=udid;  }
 	      

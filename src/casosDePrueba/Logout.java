@@ -19,7 +19,7 @@ public class Logout {
 	
 	UI_Menu_Izq fp = PageFactory.initElements(Config.driver, UI_Menu_Izq.class);
 	fp.home();	
-	Thread.sleep(2000);
+//	Thread.sleep(2000);
 	fp.salir();	
 	paso = "Salir";
 	Frmwrk.logEvidencia(Config.globalCP, paso);		

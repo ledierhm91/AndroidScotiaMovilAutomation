@@ -176,7 +176,7 @@ public class Reportes {
 
 		// Duracion
 		Row duracion = table.createRow(15f);
-		cell = duracion.createCell(100, "Total duracion: " + time + unidad);
+		cell = duracion.createCell(100, "Total duración: " + time + unidad);
 		cell.setFont(PDType1Font.HELVETICA);
 		cell.setFontSize(12);
 		cell.setFillColor(Color.WHITE);

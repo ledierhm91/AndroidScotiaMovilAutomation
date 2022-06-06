@@ -40,7 +40,12 @@ public class Frmwrk {
 	private static File srcFile3;
 	
 	//public static String CARPETA = System.getProperty("user.dir") + "\\";
+<<<<<<< HEAD
 	public static String CARPETA = "C:\\Users\\Ledier\\Downloads\\";
+=======
+	//public static String CARPETA =  "/Users/clara.brizuela/Documents/";
+	public static String CARPETA =  "//Users//ledier.hernandez//Documents//";
+>>>>>>> e9f0eaef70e7add4a637e3b1d4c021c5f0b0f241
 	public static String CARPETA_REPORTES = CARPETA + fecha + " - Android " + Config.driver.getCapabilities().getCapability("platformVersion") +"//";
 	//public static String CARPETA_REPORTES = CARPETA + "Reportes//";
 	//public static String CARPETA_REPORTES = CARPETA + fecha + " - Android " +"//";

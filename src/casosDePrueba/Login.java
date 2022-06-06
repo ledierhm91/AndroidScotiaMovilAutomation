@@ -32,7 +32,7 @@ public class Login {
 	fp.InLoginP3(usr,pin, pwd);
 	
 //	System.out.println("aa" + Frmwrk.obtenerFecha());
-	Thread.sleep(25000);
+//	Thread.sleep(25000);
 	//System.out.println("aaa");
 //	Config.esperar("last_mov_text");
 //	System.out.println("b" + Frmwrk.obtenerFecha());
