@@ -59,15 +59,15 @@ public class Config {
 	        //cambio de version
 	        
 	       ///// config para instalar la app en el dispositivo y utilizar esta para el proceso de testing
-	      //File file = new File("//Users//scotibank//Downloads//", "develop_2.5.0beta5_127.apk");
+	      File file = new File("D:\\Selenium\\ProyectosRepositorio\\AndroidScotiaMovilAutomation\\app\\", "Scotiabank.apk");
 	        
-<<<<<<< HEAD
-	       File file = new File("D:\\Selenium\\APP\\develop_2.4.3_137.apk" );
-=======
-	       File file = new File("/Users/ledier.hernandez/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite/OneDrive - Perficient, Inc.noindex/OneDrive - Perficient, Inc/Repositorios/AndroidScotiaMovilAutomation/app", "Scotiabank.apk" );
+
+	       //File file = new File("D:\\Selenium\\ProyectosRepositorio\\AndroidScotiaMovilAutomation\\app\\Scotiabank.apk" );
+
+	       //File file = new File("/Users/ledier.hernandez/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite/OneDrive - Perficient, Inc.noindex/OneDrive - Perficient, Inc/Repositorios/AndroidScotiaMovilAutomation/app", "Scotiabank.apk" );
 	       
 	       //File file = new File("/Users/clara.brizuela/Library/CloudStorage/OneDrive-Perficient,Inc/Repositorio/AndroidScotiaMovilAutomation/app/Scotiabank.apk" );
->>>>>>> e9f0eaef70e7add4a637e3b1d4c021c5f0b0f241
+
 	      
 	       capabilities.setCapability("app", file.getAbsolutePath());  
 	        
