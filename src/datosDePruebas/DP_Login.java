@@ -58,7 +58,7 @@ public class DP_Login{
 	  						break;
 	            case 8:  	
 	            	usuario = "27051529"; // Para pago de TARJETA DE CRÉDITO propias
-	        		pin = "1234";
+	        		pin = "2580";
 	        		password = "Testing.07";
 	  						break;
 	            case 9:  	
@@ -74,7 +74,7 @@ public class DP_Login{
 	  						
 	            case 11:	            	
 	            	usuario = "27051529"; // REPETIDO CON USUARIO D-8
-	        		pin = "1234";
+	        		pin = "2580";
 	        		password = "Testing.07";
 	  						break;	
 	  						
