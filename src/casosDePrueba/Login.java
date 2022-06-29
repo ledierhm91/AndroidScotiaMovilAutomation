@@ -10,13 +10,11 @@ public class Login {
 	public static void iniciar(String usr, String pin, String pwd) throws Exception
 	{long startTime=0;
 	String paso="";	
-	
 	try{startTime = System.nanoTime();
 	Config.globalCP = "Login - " + Frmwrk.obtenerFecha();
 	Config.globalDescrip = "Se realiza el login a la aplicacion, ingresando los siguientes datos: usuario, PIN y contrasenia"; 
 	//----------------------------------------------------------		
 	String version= Config.driver.getCapabilities().getCapability("platformName").toString();
-	 
 	if (version.equals("LINUX"))
 	{Frmwrk.versionOS= "Android - " + Config.driver.getCapabilities().getCapability("platformVersion");}
 	else
@@ -37,7 +35,7 @@ public class Login {
 //	Config.esperar("last_mov_text");
 //	System.out.println("b" + Frmwrk.obtenerFecha());
 	paso = "Se muestra pantalla principal";
-	Frmwrk.logEvidencia(Config.globalCP, paso);	
+	Frmwrk.logEvidencia(Config.globalCP, paso); 	
 			
 	//----------------------------------------------------------
 	

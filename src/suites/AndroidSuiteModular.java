@@ -48,25 +48,20 @@ import ui.UI_Login;
 
 public class AndroidSuiteModular{	
 	Config stgs = new Config();			
-	
 	public void modInicio () throws Exception
 	{
-//	Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	long startTime=0;	
 	try{startTime = System.nanoTime();
-	
 /*	Config.esperar("btnNegative");
 	MobileElement ini = (MobileElement) Config.driver.findElement(By.id("btnNegative"));	
     ini.click();	
 	*/
-	
 	///----------------Splash screen-------------------------
 	Config.globalCP = "Splash - " + Frmwrk.obtenerFecha();
 	Config.globalDescrip = "Imprimimos la pantalla de splash para verificar si se muestra correctamente"; 
 	Frmwrk.logEvidenciaX3(Config.globalCP, "Splash");
 	//-------------------------------------------------------
 	Frmwrk.logResultadoPassed((System.nanoTime() - startTime), Config.globalCP);
-//	Thread.sleep(3000);
 	//------------------Tutorial-----------------------------  
 	UI_Login L = PageFactory.initElements(Config.driver, UI_Login.class);		    
     Config.globalCP = "Tutorial - " + Frmwrk.obtenerFecha();
@@ -81,13 +76,11 @@ public class AndroidSuiteModular{
 	}   	
 }
 	
-	
 	 	public void modLogOut () throws Exception
 		{Logout.salir();}
 	 		 	
 		public void modLogIn (String Origen, Integer juegoDatos) throws Exception
 		{
-//		 Config.driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		 DP_Login datos = new DP_Login();
 		 datos.obtenerDatos(Origen, juegoDatos);
 		 Login.iniciar(datos.usuario, datos.pin, datos.password);	

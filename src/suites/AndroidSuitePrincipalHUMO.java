@@ -29,7 +29,7 @@ public class AndroidSuitePrincipalHUMO{
 		    Frmwrk.iniReportes();
 		    
 		//    java.awt.Toolkit.getDefaultToolkit().beep();
-			
+
 		 		suite.modInicio(); //Incluye Splash screen y Tutorial		
 		 		
 		 		 // comentar esta secci�n que es la que se utiliza para ejecutar loops en homologacion
